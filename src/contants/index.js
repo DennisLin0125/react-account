@@ -14,7 +14,7 @@ export const billListData = {
       name: "出行交通",
       list: [
         {type: "taxi", name: "車費"},
-        {type: "longDistance", name: "旅行票費"},
+        {type: "longdistance", name: "旅行票費"},
       ],
     },
     {
