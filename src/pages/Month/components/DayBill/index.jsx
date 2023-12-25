@@ -1,4 +1,4 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import classNames from "classnames";
 import './index.scss'
 import { billTypeToName } from "@/contants";
@@ -22,12 +22,15 @@ const DayBill = ({date, billList}) => {
     }
   }, [billList]);
   
+  // 控制展開收起
+  const [visible, setVisible] = useState(false)
+  
   return (
     <div className={classNames('dailyBill')}>
       <div className="header">
         <div className="dateIcon">
           <span className="date">{date}</span>
-          <span className={classNames('arrow')}></span>
+          <span className={classNames('arrow',visible && 'expand')} onClick={() => setVisible(!visible)}></span>
         </div>
         
         <div className="oneLineOverview">
@@ -46,10 +49,10 @@ const DayBill = ({date, billList}) => {
         </div>
       </div>
       {/*   單日列表*/}
-      <div className="billList">
+      <div className="billList" style={{display: visible ? 'block' : 'none'}}>
         {
-          billList.map(item=>{
-            return(
+          billList.map(item => {
+            return (
               <div className="bill" key={item.id}>
                 <div className="detail">
                   <div className="billType">{billTypeToName[item.useFor]}</div>
