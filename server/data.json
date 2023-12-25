@@ -146,6 +146,13 @@
       "date": "2023-12-22 15:15:12",
       "useFor": "financial",
       "id": 21
+    },
+    {
+      "type": "pay",
+      "money": -152,
+      "date": "2023-12-25T16:55:22.123Z",
+      "useFor": "drinks",
+      "id": 22
     }
   ]
 }
