@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import classNames from "classnames";
 import './index.scss'
 import { billTypeToName } from "@/contants";
+import Icon from "@/components/Icon";
 
 const DayBill = ({date, billList}) => {
   const dayResult = useMemo(() => {
@@ -30,7 +31,7 @@ const DayBill = ({date, billList}) => {
       <div className="header">
         <div className="dateIcon">
           <span className="date">{date}</span>
-          <span className={classNames('arrow',visible && 'expand')} onClick={() => setVisible(!visible)}></span>
+          <span className={classNames('arrow', visible && 'expand')} onClick={() => setVisible(!visible)}></span>
         </div>
         
         <div className="oneLineOverview">
@@ -54,6 +55,8 @@ const DayBill = ({date, billList}) => {
           billList.map(item => {
             return (
               <div className="bill" key={item.id}>
+                {/*圖標*/}
+                <Icon type={item.useFor}/>
                 <div className="detail">
                   <div className="billType">{billTypeToName[item.useFor]}</div>
                 </div>

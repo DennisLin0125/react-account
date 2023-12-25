@@ -32,63 +32,63 @@
       "type": "pay",
       "money": -75,
       "date": "2023-01-15 08:45:20",
-      "useFor": "lunch",
+      "useFor": "taxi",
       "id": 5
     },
     {
       "type": "income",
       "money": 150,
       "date": "2023-01-15 09:15:42",
-      "useFor": "freelance",
+      "useFor": "bonus",
       "id": 6
     },
     {
       "type": "pay",
       "money": -40,
       "date": "2023-01-15 12:20:30",
-      "useFor": "snacks",
+      "useFor": "bag",
       "id": 7
     },
     {
       "type": "income",
       "money": 120,
       "date": "2023-01-16 14:05:18",
-      "useFor": "consultation",
+      "useFor": "financial",
       "id": 8
     },
     {
       "type": "pay",
       "money": -60,
       "date": "2023-01-16 15:30:10",
-      "useFor": "transportation",
+      "useFor": "community",
       "id": 9
     },
     {
       "type": "income",
       "money": 80,
       "date": "2023-01-17 11:10:55",
-      "useFor": "gift",
+      "useFor": "overtimepay",
       "id": 10
     },
     {
       "type": "pay",
       "money": -25,
       "date": "2023-01-17 13:45:30",
-      "useFor": "coffee",
+      "useFor": "travel",
       "id": 11
     },
     {
       "type": "income",
       "money": 200,
       "date": "2023-01-18 09:30:48",
-      "useFor": "project",
+      "useFor": "cashgift",
       "id": 12
     },
     {
       "type": "pay",
       "money": -50,
       "date": "2023-01-18 12:15:22",
-      "useFor": "groceries",
+      "useFor": "food",
       "id": 13
     },
     {
@@ -102,49 +102,49 @@
       "type": "pay",
       "money": -70,
       "date": "2023-01-19 16:20:15",
-      "useFor": "dinner",
+      "useFor": "drinks",
       "id": 15
     },
     {
       "type": "income",
       "money": 90,
       "date": "2023-01-20 10:05:27",
-      "useFor": "workshop",
+      "useFor": "salary",
       "id": 16
     },
     {
       "type": "pay",
       "money": -35,
       "date": "2023-01-20 12:40:10",
-      "useFor": "movie",
+      "useFor": "audio",
       "id": 17
     },
     {
       "type": "income",
       "money": 130,
       "date": "2023-01-21 09:25:50",
-      "useFor": "freelance",
+      "useFor": "overtimepay",
       "id": 18
     },
     {
       "type": "pay",
       "money": -45,
       "date": "2023-01-21 11:50:33",
-      "useFor": "snacks",
+      "useFor": "promote",
       "id": 19
     },
     {
       "type": "income",
       "money": 160,
       "date": "2023-01-22 15:15:12",
-      "useFor": "consultation",
+      "useFor": "financial",
       "id": 20
     },
     {
       "type": "income",
       "money": 1602,
       "date": "2023-12-22 15:15:12",
-      "useFor": "consultation",
+      "useFor": "financial",
       "id": 21
     }
   ]
