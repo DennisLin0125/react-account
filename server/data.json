@@ -139,6 +139,13 @@
       "date": "2023-01-22 15:15:12",
       "useFor": "consultation",
       "id": 20
+    },
+    {
+      "type": "income",
+      "money": 1602,
+      "date": "2023-12-22 15:15:12",
+      "useFor": "consultation",
+      "id": 21
     }
   ]
 }

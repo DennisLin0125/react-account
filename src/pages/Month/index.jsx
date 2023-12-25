@@ -1,6 +1,6 @@
 import {NavBar,DatePicker} from "antd-mobile";
 import './index.scss'
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import classNames from "classnames";
 import dayjs from 'dayjs'
 import { useSelector } from "react-redux";
@@ -22,7 +22,6 @@ const Month = () => {
   
   const monthResult = useMemo(() => {
     if (!currentMonthList || currentMonthList.length === 0) {
-      alert(`${currentDate} 沒有資料`)
       return {
         pay: 0,
         income: 0,
@@ -38,6 +37,16 @@ const Month = () => {
       }
     }
   }, [currentMonthList]);
+  
+  // 初始化時把當前月份資料顯示出來
+  useEffect(() => {
+    const nowDate = dayjs(new Date()).format('YYYY-MM')
+    // 邊界值控制
+    if (monthGroup[nowDate]){
+      setMonthList(monthGroup[nowDate])
+    }
+  }, [monthGroup]);
+  
   const onConfirm = (date) => {
     setDataVisible(false)
     const formatDate = dayjs(date).format('YYYY-MM')
