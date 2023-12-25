@@ -36,6 +36,7 @@
         align-items: center;
         margin-bottom: 25px;
         font-size: 16px;
+        
         .arrow {
           display: inline-block;
           width: 7px;
@@ -47,9 +48,10 @@
           transform: rotate(225deg);
           transform-origin: center;
           transition: all 0.3s;
-        }
-        .arrow expand{
-          transform: translate(0, 2px) rotate(45deg);
+          
+          &.expand{
+            transform: translate(0, 2px) rotate(45deg);
+          }
         }
       }
     }
@@ -58,15 +60,18 @@
       display: flex;
       justify-content: space-between;
       width: 317px;
+      
       .item{
         display: flex;
         flex-direction: column;
+        
         .money{
           height: 24px;
           line-height: 24px;
           margin-bottom: 5px;
           font-size: 18px;
         }
+        
         .type{
           height: 14px;
           line-height: 14px;
