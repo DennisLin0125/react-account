@@ -14,16 +14,34 @@ const Month = () => {
     return _.groupBy(billList,(item)=>dayjs(item.date).format('YYYY-MM'))
   }, [billList]);
   
-  console.log('@',monthGroup)
-  
+  const [currentMonthList,setMonthList] = useState([])
   // 控制彈框
   const [dataVisible,setDataVisible] = useState(false)
   // 控制時間
   const [currentDate,setCurrentDate] = useState(()=>dayjs(new Date()).format('YYYY-MM'))
   
+  const monthResult = useMemo(() => {
+    if (!currentMonthList || currentMonthList.length === 0) {
+      alert(`${currentDate} 沒有資料`)
+      return {
+        pay: 0,
+        income: 0,
+        total: 0
+      }
+    }else {
+      const pay = currentMonthList.filter(item=>item.type==='pay').reduce((a,c)=>a+c.money,0)
+      const income = currentMonthList.filter(item=>item.type==='income').reduce((a,c)=>a+c.money,0)
+      return{
+        pay,
+        income,
+        total: pay + income
+      }
+    }
+  }, [currentMonthList]);
   const onConfirm = (date) => {
     setDataVisible(false)
     const formatDate = dayjs(date).format('YYYY-MM')
+    setMonthList(monthGroup[formatDate])
     setCurrentDate(formatDate)
   }
   
@@ -44,15 +62,15 @@ const Month = () => {
           {/* 統計域 */}
           <div className="twoLineOverview">
             <div className="item">
-              <span className="money">{100}</span>
+              <span className="money">{monthResult.pay.toFixed(2)}</span>
               <span className="type">支出</span>
             </div>
             <div className="item">
-              <span className="money">{200}</span>
+              <span className="money">{monthResult.income.toFixed(2)}</span>
               <span className="type">收入</span>
             </div>
             <div className="item">
-              <span className="money">{200}</span>
+              <span className="money">{monthResult.total.toFixed(2)}</span>
               <span className="type">結餘</span>
             </div>
           </div>
