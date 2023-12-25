@@ -20,7 +20,8 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build"
+    "build": "craco build",
+    "server": "json-server ./server/data.json --port 3004"
   },
   "eslintConfig": {
     "extends": [

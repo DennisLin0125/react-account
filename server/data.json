@@ -1,0 +1,144 @@
+{
+  "ka": [
+    {
+      "type": "pay",
+      "money": -99,
+      "date": "2022-10-24 10:36:42",
+      "useFor": "drinks",
+      "id": 1
+    },
+    {
+      "type": "pay",
+      "money": -88,
+      "date": "2022-10-24 10:36:52",
+      "useFor": "longDistance",
+      "id": 2
+    },
+    {
+      "type": "income",
+      "money": 100,
+      "date": "2022-10-24 10:37:00",
+      "useFor": "bonus",
+      "id": 3
+    },
+    {
+      "type": "pay",
+      "money": -33,
+      "date": "2022-10-24 10:37:00",
+      "useFor": "dessert",
+      "id": 4
+    },
+    {
+      "type": "pay",
+      "money": -75,
+      "date": "2023-01-15 08:45:20",
+      "useFor": "lunch",
+      "id": 5
+    },
+    {
+      "type": "income",
+      "money": 150,
+      "date": "2023-01-15 09:15:42",
+      "useFor": "freelance",
+      "id": 6
+    },
+    {
+      "type": "pay",
+      "money": -40,
+      "date": "2023-01-15 12:20:30",
+      "useFor": "snacks",
+      "id": 7
+    },
+    {
+      "type": "income",
+      "money": 120,
+      "date": "2023-01-16 14:05:18",
+      "useFor": "consultation",
+      "id": 8
+    },
+    {
+      "type": "pay",
+      "money": -60,
+      "date": "2023-01-16 15:30:10",
+      "useFor": "transportation",
+      "id": 9
+    },
+    {
+      "type": "income",
+      "money": 80,
+      "date": "2023-01-17 11:10:55",
+      "useFor": "gift",
+      "id": 10
+    },
+    {
+      "type": "pay",
+      "money": -25,
+      "date": "2023-01-17 13:45:30",
+      "useFor": "coffee",
+      "id": 11
+    },
+    {
+      "type": "income",
+      "money": 200,
+      "date": "2023-01-18 09:30:48",
+      "useFor": "project",
+      "id": 12
+    },
+    {
+      "type": "pay",
+      "money": -50,
+      "date": "2023-01-18 12:15:22",
+      "useFor": "groceries",
+      "id": 13
+    },
+    {
+      "type": "income",
+      "money": 180,
+      "date": "2023-01-19 14:55:40",
+      "useFor": "bonus",
+      "id": 14
+    },
+    {
+      "type": "pay",
+      "money": -70,
+      "date": "2023-01-19 16:20:15",
+      "useFor": "dinner",
+      "id": 15
+    },
+    {
+      "type": "income",
+      "money": 90,
+      "date": "2023-01-20 10:05:27",
+      "useFor": "workshop",
+      "id": 16
+    },
+    {
+      "type": "pay",
+      "money": -35,
+      "date": "2023-01-20 12:40:10",
+      "useFor": "movie",
+      "id": 17
+    },
+    {
+      "type": "income",
+      "money": 130,
+      "date": "2023-01-21 09:25:50",
+      "useFor": "freelance",
+      "id": 18
+    },
+    {
+      "type": "pay",
+      "money": -45,
+      "date": "2023-01-21 11:50:33",
+      "useFor": "snacks",
+      "id": 19
+    },
+    {
+      "type": "income",
+      "money": 160,
+      "date": "2023-01-22 15:15:12",
+      "useFor": "consultation",
+      "id": 20
+    }
+  ]
+}
