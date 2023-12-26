@@ -101,6 +101,11 @@
         &:last-child{
           margin-right: 0;
         }
+        &.selected{
+          border: 0.5px solid var(--ka-boder-color);
+          border-radius: 5px;
+          background: var(--ka-bg-color);
+        }
       }
       .icon{
         height: 25px;
@@ -108,12 +113,6 @@
         margin-bottom: 5px;
         font-size: 15px;
       }
-    }
-
-    .item.selected{
-      --border: 0.5px solid var(--ka-boder-color);
-      --border-radius: 5px;
-      --background: var(--ka-bg-color);
     }
   }
   .btns{

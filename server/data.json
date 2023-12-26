@@ -142,7 +142,7 @@
     },
     {
       "type": "income",
-      "money": 1602,
+      "money": 160,
       "date": "2023-12-22 15:15:12",
       "useFor": "financial",
       "id": 21
@@ -153,6 +153,41 @@
       "date": "2023-12-25T16:55:22.123Z",
       "useFor": "drinks",
       "id": 22
+    },
+    {
+      "type": "pay",
+      "money": -142,
+      "date": "2023-12-23T16:00:00.000Z",
+      "useFor": "food",
+      "id": 23
+    },
+    {
+      "type": "pay",
+      "money": -10100,
+      "date": "2023-12-26T07:18:40.567Z",
+      "useFor": "drinks",
+      "id": 24
+    },
+    {
+      "type": "income",
+      "money": 10100,
+      "date": "2023-12-21T16:00:00.000Z",
+      "useFor": "bonus",
+      "id": 25
+    },
+    {
+      "type": "income",
+      "money": 100,
+      "date": "2023-12-26T07:40:10.055Z",
+      "useFor": "overtimepay",
+      "id": 26
+    },
+    {
+      "type": "income",
+      "money": 52100,
+      "date": "2023-10-21T16:00:00.000Z",
+      "useFor": "salary",
+      "id": 27
     }
   ]
 }
